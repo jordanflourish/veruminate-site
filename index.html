@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veruminate</title>
+<meta name="description" content="I turn adulting into cheat sheets for the fed-up.">
+<style>
+  :root {
+    --bg: #FAF8F4; --surface: #FFFFFF; --fg: #1D2127; --muted: #5A6270;
+    --line: #E3DED5; --accent: #1C6B86; --accent-ink: #FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #13171C; --surface: #1A1F26; --fg: #E8EBEF; --muted: #A2ABB8;
+      --line: #2C333D; --accent: #63B7D4; --accent-ink: #0C1A21;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+  .brand { font-size: .95rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 12px; }
+  h1 { font-size: clamp(1.8rem, 5vw, 2.6rem); line-height: 1.15; margin: 0 0 20px; text-wrap: balance; }
+  .pitch { margin: 0 0 40px; }
+  h2 { font-size: 1.25rem; margin: 0 0 16px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 20px 22px; margin: 0 0 16px; }
+  .card h3 { font-size: 1.08rem; margin: 0 0 6px; line-height: 1.3; }
+  .card h3 .type { font-weight: 400; color: var(--muted); font-size: .9rem; }
+  .card p { margin: 0 0 12px; }
+  .card .stat { color: var(--muted); font-size: .95rem; }
+  a.btn {
+    display: inline-block; background: var(--accent); color: var(--accent-ink);
+    text-decoration: none; font-weight: 600; font-size: .95rem;
+    padding: 8px 14px; border-radius: 8px;
+  }
+  a.btn:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .contact { margin-top: 40px; }
+  .contact a { color: var(--accent); font-weight: 600; }
+  footer { margin-top: 48px; color: var(--muted); font-size: .85rem; }
+</style>
+</head>
+<body>
+<main>
+  <p class="brand">Veruminate</p>
+  <h1>I turn adulting into cheat sheets for the fed-up.</h1>
+
+  <p class="pitch">Life shouldn’t be this complex. Taxes, benefits, insurance, politics... it’s like you’re expected to be a research expert, or else you get screwed. That’s where I come in. I’m a research expert on speed dial. I break down your most important life chores into idiot-proof steps, charts, tools, and videos, so you know what to do next and why. Every output follows an extensive, multi-step methodology and cites its sources, so you can inspect its trustworthiness to your heart’s content, starting with the examples below. If you’re an organization that helps the public navigate complicated systems, contact me for a discounted, early-adopter quote.</p>
+
+  <h2>Examples</h2>
+
+  <article class="card">
+    <h3>1. Politics Is Exhausting. These Tools Make It Easy. <span class="type">(video guide)</span></h3>
+    <p>A guide to eight levels of civic action, from easiest to hardest: social media, boycotting, donating, lobbying, protesting, volunteering, running for office, and entrepreneurship.</p>
+    <p class="stat">The written version earned about 4,000 upvotes and 5,000 shares on Reddit.</p>
+    <a class="btn" href="https://youtu.be/niVsGdfbxZo">Watch the video</a>
+  </article>
+
+  <article class="card">
+    <h3>2. DOGE’s Worst Nightmare Is a Flowchart <span class="type">(video)</span></h3>
+    <p>A series of yes/no questions that connects DOGE’s status and actions to the specific laws and constitutional articles that govern them.</p>
+    <p class="stat">2,862 views and 230 likes.</p>
+    <a class="btn" href="https://youtu.be/7Fnt7nSvRB4">Watch the video</a>
+  </article>
+
+  <article class="card">
+    <h3>3. Friction Fixer Workbook <span class="type">(spreadsheet template)</span></h3>
+    <p>A method for finding tools that fix a specific struggle. It breaks a struggle into research-named friction points, matches each one to its best-supported treatment, and pairs each treatment with a second treatment that prevents its side effects. Then it audits apps, devices, and services against those treatments by cost, setup effort, privacy, and the person’s own devices. Every mark cites a dated source.</p>
+    <p class="stat">Free to use under CC BY 4.0.</p>
+    <a class="btn" href="https://osf.io/8xtuz/files/4bruc">View on OSF</a>
+  </article>
+
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <p><a href="mailto:jordanflourish@veruminate.org">jordanflourish@veruminate.org</a></p>
+  </section>
+
+  <footer>© 2026 Veruminate LLC</footer>
+</main>
+</body>
+</html>
